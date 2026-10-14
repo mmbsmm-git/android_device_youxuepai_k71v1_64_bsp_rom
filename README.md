@@ -55,6 +55,13 @@
 
 ## 五、构建步骤（M1）
 
+> **本机推荐路线（无需银行卡）**：在**移动硬盘启动的 Fedora** 上用容器编译。
+> 完整步骤见 `Lazy_Action-ROM-Builder/docs/BUILD-FEDORA.md` + `local/rom.sh`：
+> `./rom.sh image` → `./rom.sh sync` → `./rom.sh extract`（提 blobs）→ `./rom.sh build`
+> （Fedora 不被 AOSP 官方支持，故编译在 `ubuntu:20.04` 容器里进行。）
+
+通用步骤（Linux + Ubuntu，或容器内同）：
+
 ```bash
 # 1) 同步 LineageOS 20 源码
 repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
