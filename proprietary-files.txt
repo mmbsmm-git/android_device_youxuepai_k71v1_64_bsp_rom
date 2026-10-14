@@ -487,9 +487,9 @@ vendor/etc/init/hw/init.aee.rc
 vendor/etc/init/hw/init.ago.rc
 vendor/etc/init/hw/init.connectivity.rc
 vendor/etc/init/hw/init.modem.rc
-vendor/etc/init/hw/init.mt6771.rc
+# [IN-DEVICE-MK] vendor/etc/init/hw/init.mt6771.rc
 vendor/etc/init/hw/init.mt6771.usb.rc
-vendor/etc/init/hw/init.project.rc
+# [IN-DEVICE-MK] vendor/etc/init/hw/init.project.rc
 vendor/etc/init/hw/init.sensor_1_0.rc
 vendor/etc/init/hw/meta_init.connectivity.rc
 vendor/etc/init/hw/meta_init.modem.rc

@@ -6,7 +6,7 @@ $(call inherit-product, device/youxuepai/k71v1_64_bsp/device.mk)
 $(call inherit-product-if-exists, vendor/youxuepai/k71v1_64_bsp/k71v1_64_bsp-vendor.mk)
 
 # LineageOS 定制(去掉/LINEAGE 视需求保留)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 PRODUCT_NAME := lineage_k71v1_64_bsp
 PRODUCT_DEVICE := k71v1_64_bsp

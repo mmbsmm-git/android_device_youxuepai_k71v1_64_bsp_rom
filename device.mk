@@ -39,3 +39,23 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # ---------------- 语言 ----------------
 PRODUCT_DEFAULT_LOCALE := zh_CN
+
+# ---------------- Rootdir / Init / Configs ----------------
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/etc/init.mt6771.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mt6771.rc \
+    $(DEVICE_PATH)/rootdir/etc/init.project.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.project.rc \
+    $(DEVICE_PATH)/rootdir/etc/ueventd.mt6771.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc \
+    $(DEVICE_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    $(DEVICE_PATH)/configs/audio/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    $(DEVICE_PATH)/configs/audio/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
+    $(DEVICE_PATH)/configs/audio/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
+    $(DEVICE_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    $(DEVICE_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+    $(DEVICE_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+
+# ---------------- 调试默认开启 ADB (M1 抓 log 必备) ----------------
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1 \
+    persist.sys.usb.config=mtp,adb
