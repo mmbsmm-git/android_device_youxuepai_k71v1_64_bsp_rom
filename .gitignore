@@ -1,0 +1,7 @@
+*.zip
+*.img
+!prebuilt/*.img
+out/
+*.log
+*.swp
+.DS_Store

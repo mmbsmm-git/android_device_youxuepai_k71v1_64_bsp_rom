@@ -1,0 +1,7 @@
+# product.prop — 产品级属性(取自原厂 prop.default 子集)
+ro.product.version=0.0.0
+ro.build.characteristics=tablet
+ro.com.google.clientidbase.gmm=android-mtk
+ro.carrier=unknown
+ro.com.android.mobiledata=true
+ro.wifi.channels=

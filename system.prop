@@ -1,0 +1,32 @@
+# system.prop — P709 (取自原厂 prop.default 的关键子集)
+# 显示(物理竖屏 1200x2000)
+ro.sf.lcd_density=320
+ro.sf.hwrotation=0
+ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+
+# MTK 平台
+ro.mediatek.platform=MT6771
+ro.board.platform=mt6771
+ro.mediatek.chip_ver=S01
+ro.mediatek.version.branch=alps-mp-p0.mp1
+ro.mediatek.version.release=alps-mp-p0.mp1-V5.166
+ro.vendor.mediatek.platform=MT6771
+ro.vendor.mediatek.version.branch=alps-mp-p0.mp1
+ro.vendor.mediatek.version.release=alps-mp-p0.mp1-V5.166
+ro.mount.fs=EXT4
+ro.zygote=zygote64_32
+dalvik.vm.isa.arm64.variant=cortex-a53
+dalvik.vm.isa.arm.variant=cortex-a53
+dalvik.vm.dex2oat-filter=verify-at-runtime
+ro.opengles.version=196610
+
+# 设备
+ro.product.board=k71v1_64_bsp
+ro.noah.name.dev=U60
+ro.product.noahmodel=P709
+ro.sys.usb.storage.type=mtp
+ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.sys.sdcardfs=1
+ro.mtk_bsp_package=1
+persist.sys.timezone=Asia/Shanghai

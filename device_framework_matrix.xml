@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  device_framework_compatibility_matrix (framework matrix)
+  本机 vendor 是 Android 9(VNDK 28)。新 system(A13) 必须对老 vendor 的 HAL/接口保持兼容。
+  这里只做"放宽"声明(空 matrix = 不额外限制)，具体缺哪个 HAL 由首次编译/开机日志决定。
+  TODO(M1): 若 assemble_vintf 报 "HAL not in framework matrix" 之类，在此补充对应 HAL。
+-->
+<compatibility-matrix version="1.0" type="framework">
+</compatibility-matrix>
